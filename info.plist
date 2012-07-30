@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>action</key>
+	<false/>
+	<key>background</key>
+	<true/>
+	<key>category</key>
+	<string>APPLESCRIPTS</string>
+	<key>command</key>
+	<string>on alfred_script(q)
+	set theYear to year of (current date) as string
+
+	set theMonth to (month of (current date) as number)
+
+	if theMonth &lt; 10 then
+		set theMonth to "0" &amp; theMonth
+    else
+		set theMonth to "" &amp; theMonth
+	end if
+
+    set theDate to "" &amp; year of (current date) &amp; "-" &amp; theMonth &amp; "-" &amp; day of (current date)
+
+	set theHours to (hours of (current date) as number)
+
+	if theHours &lt; 10 then
+		set theHours to "0" &amp; theHours
+	else
+		set theHours to "" &amp; theHours
+	end if
+
+	set theMinutes to (minutes of (current date) as number)
+
+	if theMinutes &lt; 10 then
+		set theMinutes to "0" &amp; theMinutes
+	else
+		set theMinutes to "" &amp; theMinutes
+	end if
+
+	set theTime to theHours &amp; ":" &amp; theMinutes
+
+    tell application "nvALT"
+		activate
+		tell application "System Events"
+			keystroke "l" using command down
+			keystroke theDate &amp; return &amp; return &amp; return
+			keystroke theTime &amp; " -- " &amp; q
+			keystroke tab using {command down}
+		end tell
+    end tell  
+end alfred_script</string>
+	<key>disabled</key>
+	<false/>
+	<key>keyword</key>
+	<string>nj</string>
+	<key>parameter</key>
+	<integer>0</integer>
+	<key>subtitle</key>
+	<string>Append to nvALT journal</string>
+	<key>title</key>
+	<string>Append to nvALT journal</string>
+</dict>
+</plist>
