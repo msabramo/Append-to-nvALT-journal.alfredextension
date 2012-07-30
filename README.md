@@ -17,7 +17,8 @@ Installation
 ------------
 
 Copy this into the `extensions/applescripts` directory of your Alfred
-data directory. Since I store my Alfred data in Dropbox, for me this is
+data directory. Since I store my Alfred data in
+[Dropbox](http://db.tt/ti3HcAxj), for me this is
 `~/Dropbox/Alfred/extensions/applescripts/Append to nvALT journal`. If
 you don't use Dropbox, then this probably should be
 `~/Library/Application Support/Alfred/extensions/Append to nvALT
