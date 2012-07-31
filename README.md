@@ -5,7 +5,7 @@ Append to nvALT journal
 [nvALT](http://brettterpstra.com/project/nvalt/)
 
 I have this extension mapped to the keyword "nj" (for "nvALT Journal").
-I activate Alfred and type "nj <text>" and the extension
+I activate Alfred and type "nj &lt;text&gt;" and the extension
 automatically opens up nvALT and makes sure that there's a note with the
 current date in the form "YYYY-mm-dd" and then appends my text to the
 end of the note with a 24 hour timestamp in front of it. It then
@@ -18,24 +18,13 @@ Prerequisites
 
 - [Alfred](http://www.alfredapp.com/)
 - [Alfred Power Pack](http://www.alfredapp.com/powerpack/)
+- [nvALT](http://brettterpstra.com/project/nvalt/)
 
 
 Download
 --------
 
 - [Click here](https://github.com/downloads/msabramo/Append-to-nvALT-journal.alfredextension/Append%20to%20nvALT%20journal.alfredextension)
-
-
-Installation
-------------
-
-Copy the download or the git checkout into the `extensions/applescripts`
-directory of your Alfred data directory. Since I store my Alfred data in
-[Dropbox](http://db.tt/ti3HcAxj), for me this is
-`~/Dropbox/Alfred/extensions/applescripts/Append to nvALT journal`. If
-you don't use Dropbox, then this probably should be
-`~/Library/Application Support/Alfred/extensions/Append to nvALT
-journal` for you.
 
 
 Marc Abramowitz
