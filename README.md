@@ -13,11 +13,24 @@ switches back to the application that I was previously in so I can go
 immediately back to whatever I was doing.
 
 
+Prerequisites
+-------------
+
+- [Alfred](http://www.alfredapp.com/)
+- [Alfred Power Pack](http://www.alfredapp.com/powerpack/)
+
+
+Download
+--------
+
+- [Click here](https://github.com/downloads/msabramo/Append-to-nvALT-journal.alfredextension/Append%20to%20nvALT%20journal.alfredextension)
+
+
 Installation
 ------------
 
-Copy this into the `extensions/applescripts` directory of your Alfred
-data directory. Since I store my Alfred data in
+Copy the download or the git checkout into the `extensions/applescripts`
+directory of your Alfred data directory. Since I store my Alfred data in
 [Dropbox](http://db.tt/ti3HcAxj), for me this is
 `~/Dropbox/Alfred/extensions/applescripts/Append to nvALT journal`. If
 you don't use Dropbox, then this probably should be
